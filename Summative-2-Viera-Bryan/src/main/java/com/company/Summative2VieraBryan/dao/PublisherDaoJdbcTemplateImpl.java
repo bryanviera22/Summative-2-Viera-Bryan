@@ -4,11 +4,13 @@ import com.company.Summative2VieraBryan.dto.Publisher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+@Repository
 public class PublisherDaoJdbcTemplateImpl implements PublisherDao {
 
     private JdbcTemplate jdbcTemplate;
@@ -23,7 +25,7 @@ public class PublisherDaoJdbcTemplateImpl implements PublisherDao {
             "select * from publisher";
 
     private static final String UPDATE_PUBLISHER_SQL =
-            "update publisher set name = ?, street = ?, city = ?, state = ?, postal_code = ?, phone = ?, email = ?";
+            "update publisher set name = ?, street = ?, city = ?, state = ?, postal_code = ?, phone = ?, email = ? where publisher_id = ?";
 
     private static final String DELETE_PUBLISHER_SQL =
             "delete from publisher where publisher_id = ?";

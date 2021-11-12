@@ -4,11 +4,13 @@ import com.company.Summative2VieraBryan.dto.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+@Repository
 public class BookDaoJdbcTemplateImpl implements BookDao {
 
     private JdbcTemplate jdbcTemplate;
@@ -26,7 +28,7 @@ public class BookDaoJdbcTemplateImpl implements BookDao {
             "select * from book where author_id =?";
 
     private static final String UPDATE_BOOK_SQL =
-            "update book set isbn =?, publish_date = ?, author_id =?, title = ?, publisher_id = ?, price = ?";
+            "update book set isbn =?, publish_date = ?, author_id =?, title = ?, publisher_id = ?, price = ? where book_id = ?";
 
     private static final String DELETE_BOOK_SQL =
             "delete from book where book_id = ?";
@@ -87,10 +89,10 @@ public class BookDaoJdbcTemplateImpl implements BookDao {
                 book.getIsbn(),
                 book.getPublishDate(),
                 book.getAuthorId(),
-                book.getAuthorId(),
                 book.getTitle(),
                 book.getPublisherId(),
-                book.getPrice());
+                book.getPrice(),
+                book.getId());
     }
 
     @Override

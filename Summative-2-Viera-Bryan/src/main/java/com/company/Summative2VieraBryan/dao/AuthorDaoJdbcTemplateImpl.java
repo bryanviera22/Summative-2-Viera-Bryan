@@ -4,11 +4,13 @@ import com.company.Summative2VieraBryan.dto.Author;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+@Repository
 public class AuthorDaoJdbcTemplateImpl implements AuthorDao {
 
     private JdbcTemplate jdbcTemplate;
@@ -23,7 +25,7 @@ public class AuthorDaoJdbcTemplateImpl implements AuthorDao {
             "select * from author";
 
     private static final String UPDATE_AUTHOR_SQL =
-            "update author set first_name = ?, last_name = ?, street = ?, city = ?, state = ?, postal_code = ?, phone = ?, email = ?";
+            "update author set first_name = ?, last_name = ?, street = ?, city = ?, state = ?, postal_code = ?, phone = ? email = ? where author_id = ?";
 
     private static final String DELETE_AUTHOR =
             "delete from author where author_id = ?";

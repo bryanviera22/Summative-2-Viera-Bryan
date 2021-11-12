@@ -4,6 +4,7 @@ import com.company.Summative2VieraBryan.dto.Author;
 import com.company.Summative2VieraBryan.dto.Book;
 import com.company.Summative2VieraBryan.dto.Publisher;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,7 +54,7 @@ public class AuthorDaoTest {
         author.setLastName("Collins");
         author.setStreet("123 Main St");
         author.setCity("New York City");
-        author.setState("New York");
+        author.setState("NY");
         author.setPostalCode("22123");
         author.setPhone("571-555-333");
         author.setEmail("suzanneColl@gmail.com");
@@ -79,7 +80,7 @@ public class AuthorDaoTest {
         author.setLastName("Collins");
         author.setStreet("123 Main St");
         author.setCity("New York City");
-        author.setState("New York");
+        author.setState("NY");
         author.setPostalCode("22123");
         author.setPhone("571-555-333");
         author.setEmail("suzanneColl@gmail.com");
@@ -89,7 +90,7 @@ public class AuthorDaoTest {
         author.setLastName("Coelho");
         author.setStreet("2285 Spring rd");
         author.setCity("Herndon");
-        author.setState("Virginia");
+        author.setState("VA");
         author.setPostalCode("19050");
         author.setPhone("571-578-695");
         author.setEmail("pauloCo@gmail.com");
@@ -109,7 +110,7 @@ public class AuthorDaoTest {
         author.setLastName("Collins");
         author.setStreet("123 Main St");
         author.setCity("New York City");
-        author.setState("New York");
+        author.setState("NY");
         author.setPostalCode("22123");
         author.setPhone("571-555-333");
         author.setEmail("suzanneColl@gmail.com");
@@ -120,7 +121,7 @@ public class AuthorDaoTest {
         author.setLastName("Winterson");
         author.setStreet("523 Saint Peter St");
         author.setCity("San Antonio");
-        author.setState("Texas");
+        author.setState("TX");
         author.setPostalCode("56977");
         author.setPhone("709-356-4564");
         author.setEmail("jeanw@gmail.com");

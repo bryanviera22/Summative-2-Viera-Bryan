@@ -52,7 +52,7 @@ public class PublisherDaoTest {
         publisher.setName("Cannon Gate");
         publisher.setStreet("552 Waterview Cl");
         publisher.setCity("San Francisco");
-        publisher.setState("California");
+        publisher.setState("CA");
         publisher.setPostalCode("63001");
         publisher.setPhone("703-569-4578");
         publisher.setEmail("cannongpublisher@gmail.com");
@@ -76,7 +76,7 @@ public class PublisherDaoTest {
         publisher.setName("Cannon Gate");
         publisher.setStreet("552 Waterview Cl");
         publisher.setCity("San Francisco");
-        publisher.setState("California");
+        publisher.setState("CA");
         publisher.setPostalCode("63001");
         publisher.setPhone("703-569-4578");
         publisher.setEmail("cannongpublisher@gmail.com");
@@ -86,7 +86,7 @@ public class PublisherDaoTest {
         publisher.setName("New Publisher");
         publisher.setStreet("1478 Angel Wing Ct");
         publisher.setCity("Arlington");
-        publisher.setState("Virginia");
+        publisher.setState("VA");
         publisher.setPostalCode("20146");
         publisher.setPhone("703-154-4546");
         publisher.setEmail("newpublisher@gmail.com");
@@ -104,7 +104,7 @@ public class PublisherDaoTest {
         publisher.setName("Cannon Gate");
         publisher.setStreet("552 Waterview Cl");
         publisher.setCity("San Francisco");
-        publisher.setState("California");
+        publisher.setState("CA");
         publisher.setPostalCode("63001");
         publisher.setPhone("703-569-4578");
         publisher.setEmail("cannongpublisher@gmail.com");
@@ -113,7 +113,7 @@ public class PublisherDaoTest {
         publisher.setName("New Publisher");
         publisher.setStreet("1545 New Street Way");
         publisher.setCity("Falls Church");
-        publisher.setState("Virginia");
+        publisher.setState("VA");
         publisher.setPostalCode("12540");
         publisher.setPhone("503-451-4547");
         publisher.setEmail("newpublisher1@gmail.com");
